@@ -201,6 +201,9 @@ Show the v_synch going high, low, high, and related v count.
 11. [vga.vhdl](https://raw.githubusercontent.com/JohnTerragnoli/ECE383_Lab01/master/code/vga.vhd)
 12. [vga_tb.vhdl](https://raw.githubusercontent.com/JohnTerragnoli/ECE383_Lab01/master/code/vga_tb.vhdl)
 13. [video.vhdl](https://raw.githubusercontent.com/JohnTerragnoli/ECE383_Lab01/master/code/video.vhdl)
+14. [testbench waveform](https://raw.githubusercontent.com/JohnTerragnoli/ECE383_Lab01/master/code/vga_testbench_waveform.wcfg)
+15. [bit file](https://github.com/JohnTerragnoli/ECE383_Lab01/blob/master/code/lab1.bit)
+
 
 
 
