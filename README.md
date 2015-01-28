@@ -88,10 +88,13 @@ Responsible for all of the work going on in the lab1 module, except for the deci
 
 
 ##Double Counter
-**Overall Purpose** 
-**Inputs**
-**Outputs**
-**Behavior**
+**Overall Purpose**  Count through all the pixel on the screen, one at a time, and output the current value of the row and column focusing on.  
+
+**Inputs** clk (which is really the pixel_clk), reset, and crtl (hung at a '1' so that it is always counting)
+
+**Outputs** countA0 and countA1, which are the column and row respectively.  
+
+**Behavior** Created using 2 instantiations of a single counter, which can count up to a single number and then pass a roll over number out as well.  The two were linked together so that the rollover of the first, faster counting, counter, was the control signal of the second one.  Therefore, the second counter could only keep counting when there was a rollover in the faster moving counter.  
 
 
 ##H_Synch
