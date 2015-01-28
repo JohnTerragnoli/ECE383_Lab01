@@ -154,5 +154,8 @@ Doing this allows the image to be presented correctly on the screen.
 
 #Test/Debug
 
+##Construction Process:
+1. First, I decided to modify my counter from HW4 to work for arbitrary numbers.  This could then be used to count the number of rows and columns on the screen.  To do this I simply just created another input in the counter.vhd module.  An issue which drove me crazy was that my counter would not work for decimal numbers.  I tried a number of different things, but eventually gave up.  It worked with binary, but that got annoying fast.  So I decided to use hex, and then just increase the number of bits in row and column from 10 to 12 so I could just use three hex digits.  This seemed to work well, and of course I changed all of the other modules to work for 12 bit row and column addresses.  
+2. Used HW4 to find the numbers to count to in the counters.  This turned out to be 799 and 524, for columns and rows, respectively.  
 
 #Documentation: 
