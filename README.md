@@ -156,6 +156,14 @@ Doing this allows the image to be presented correctly on the screen.
 
 ##Construction Process:
 1. First, I decided to modify my counter from HW4 to work for arbitrary numbers.  This could then be used to count the number of rows and columns on the screen.  To do this I simply just created another input in the counter.vhd module.  An issue which drove me crazy was that my counter would not work for decimal numbers.  I tried a number of different things, but eventually gave up.  It worked with binary, but that got annoying fast.  So I decided to use hex, and then just increase the number of bits in row and column from 10 to 12 so I could just use three hex digits.  This seemed to work well, and of course I changed all of the other modules to work for 12 bit row and column addresses.  
-2. Used HW4 to find the numbers to count to in the counters.  This turned out to be 799 and 524, for columns and rows, respectively.  
+2. Used HW4 to find the numbers to count to in the counters.  This turned out to be 799 and 524, for columns and rows, respectively.  I ran my testbench from HW4 to verify that the counters glued together worked correctly.  
+3. Then the h and v synch and blank modules were created.  This was done fairly quickly as it required only a few lines of code.  
+4. I followed the directions for the lab online to create the appropriate instantiations of VGA in video, and scopeFace in VGA.  No issues here, other than having to make the trigger, row, and column lengths to be 12 bits.  
+5. ScopeFace was then made, at first without any combinational logic.  I simply made the RGB value to be 0xFFFFFF, or an all white screen.  When I ran the program, I got a sort of hazy white signal.  I decided to take another look at my code, figuring that the h_synch and/or v_synch must be off in some place.  It turns out that when I was converting values to hex, copied some of the numbers down wrong when writing the when statements for the h and v synch modules.
+6. I tried running the code again, and this time, nothing showed up on the monitor.  I wasn't sure what to check so I just turned the monitor off and on again, and then a white screen appeared.  I had to do this same trick several times later in the lab to get the appropriate image to show up.  
+7. Then, I made the grid in baby steps.  First the when statements for the verticle lines, then the horizontal lines, then the vertical tic marks, then the horizontal tick marks.  Everything was going swell up until making the horizontal tic marks, but then
 
 #Documentation: 
+C2C Sabin Park said that it was really hard to use decimal digits within the modules, so he Recommended using hexidecimal.  To make this alright, I then had to increase the length of the signal
+Coming into the cascade counter so that it could be written in hexidecimal/have the right number of bits.  
+
