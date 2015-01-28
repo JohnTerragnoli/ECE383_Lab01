@@ -26,17 +26,25 @@ The Double Counter box is expanded below, as it was too complex to fit in a smal
 
 The description of each part in the picture can be seen below: 
 
+
 ##Lab1.vhd
 **Overall Purpose** Contains all of the files necessary to convert an electrical input, or signal, to a visual display on an LCD screen.  It does this by outputting the signal in HDMI format.  Also, it accepts input from buttons the ATLYS to move time and voltage triggers on the screen.  Comes with a reset button to place triggers back to center. 
-**Inputs**
-**Outputs**
-**Behavior**
+
+**Inputs** btn (5 bits), clk, and reset.  Eventually, in later labs, this may be modified to that it can intake an actual electrical signal.  
+
+**Outputs** tmds and tmdsb.  These outputs are in HDMI form and can be accepted by the LCD monitor used in class.  It is a visual signal draw desired images on the screen.  
+
+**Behavior** 
+
 
 ##Button Decoder
-**Overall Purpose** 
-**Inputs**
-**Outputs**
-**Behavior**
+**Overall Purpose** Convert the signals from the 5 different buttons on the ATLYS board to reset and shift the location of the trigger time and trigger volt up and down on the screen.  
+
+**Inputs** clk, reset, and btn (5 bit)
+
+**Outputs** tigger_time (12 bits) and trigger_volt (12 bits).  
+
+**Behavior**  First of all, this was not actually done in its own module, but instead was just done in two processes inside the lab 1 module.  The first process worked so that the trigger_time and trigger_volt only changed when a complete click of the button (down AND up) took place.  Otherwise, the triggers would zip across the screen with only a small press.  The second process contained the logic for decoding which buttons were actually hit.  The middle button was the soft reset, so that when it was hit, the location of the trigger_time and trigger_volt was reset to be centered on the screen.  The top and botton buttons were wired so that they would move the trigger_volt icon up and down the screen.  The left and right buttons were wired so that they would move the trigger_time icon left and right on the screen. The icons moved by incrememts of 10 (aside from bouncing), and only did so when a complete click was made.  Unfortunately nothing was done for the debouncing problem.  
 
 
 ##Video
