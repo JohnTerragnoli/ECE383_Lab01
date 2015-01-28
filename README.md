@@ -106,17 +106,29 @@ Responsible for all of the work going on in the lab1 module, except for the deci
 
 
 ##H_Synch
-**Overall Purpose** 
-**Inputs**
-**Outputs**
-**Behavior**
+**Overall Purpose** To recreate the waveform shown below in accorance to the pixel in the row currently being drawn, which synchs up everything after completing a row to ensure that the image is not misaligned.    
+
+![alt tag](https://raw.githubusercontent.com/JohnTerragnoli/ECE383_Lab01/master/pictures/h_synch_waveform.PNG "H synch/blank")
+
+Doing this allows the image to be presented correctly on the screen.  
+
+**Inputs** clk, columnNumber, reset
+
+**Outputs** h_synch_signal, h_blank_signal
+
+**Behavior** This is just a bunch of combinational logic describing when the synch and blank signals are high and low, in accorance to the picture above.  It is created in it's own module. 
 
 
 ##V_Synch
-**Overall Purpose** 
-**Inputs**
-**Outputs**
-**Behavior**
+**Overall Purpose** To recreate the waveform shown below in accorance to the pixel in the row currently being drawn. Done to check if everything is still synched up at the end of the screen being printed.  
+
+![alt tag](https://raw.githubusercontent.com/JohnTerragnoli/ECE383_Lab01/master/pictures/v_synch_waveform.PNG "V synch/blank")
+
+**Inputs** rowNumber, clk, reset
+
+**Outputs** v_synch_signal, v_blank_signal
+
+**Behavior** This is just a bunch of combinational logic describing when the synch and blank signals are high and low, in accorance to the picture above.  It is created in it's own module. 
 
 
 ##ScopeFace
