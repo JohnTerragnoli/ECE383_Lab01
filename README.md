@@ -11,9 +11,12 @@ The purpose of this lab was to program the ATLYS (FPGA) in VHDL code so that it 
 To start off this design, the following files were given: 
 
 
-Then, this picture was given so that we could have a basic idea of how the program would fit together. 
+Then, this picture was made to give overview and insight to how the overall program would run.  
 
-This picture was taken quite literally, and few changes were made to it.  The few changes that were made, however, can be seen below: 
+![alt tag](https://raw.githubusercontent.com/JohnTerragnoli/ECE383_Lab01/master/pictures/Total%20Schematic.JPG "total schematic")
+
+The Double Counter box is expanded below, as it was too complex to fit in a small space: 
+![alt tag](https://raw.githubusercontent.com/JohnTerragnoli/ECE383_Lab01/master/pictures/DoubleCounterSchematic.JPG "double counter schematic")
 
 The description of each part in the picture can be seen below: 
 
