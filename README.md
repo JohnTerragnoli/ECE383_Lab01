@@ -48,24 +48,43 @@ The description of each part in the picture can be seen below:
 
 
 ##Video
-**Overall Purpose** 
-**Inputs**
-**Outputs**
+**Overall Purpose** Create the actual HDMI signal while following a clock and accepting the location of the triggers from lab 1. 
+
+**Inputs** clk, reset, trigger_time, trigger_volt, ch1, ch1_enb, ch2, ch2_enb
+
+**Outputs** tmds, tmdsb
+
 **Behavior**
+Responsible for all of the work going on in the lab1 module, except for the deciphering of the buttons and the changing of the location of the triggers.  
+
+##DCM(1)
+**Overall Purpose** Creates the 12.5MHz pixel clock from the given 100MHz clock.  Like a divider.  
+
+**Inputs** clk, reset
+
+**Outputs** pixel_clk
+
+**Behavior** Just an entity of it is created in the video.vhd module. I did not create this file it was just used. 
 
 
-##DCM
-**Overall Purpose** 
-**Inputs**
-**Outputs**
-**Behavior**
+##DCM(2)
+**Overall Purpose** Creates the 12.5MHz pixel clock from the given 100MHz clock.  Like a divider.  
+
+**Inputs** clk, reset
+
+**Outputs** serialize_clk, serialize_clk_n
+
+**Behavior** Just an entity of it is created in the video.vhd module. I did not create this file it was just used. 
 
 
 ##VGA
-**Overall Purpose** 
-**Inputs**
-**Outputs**
-**Behavior**
+**Overall Purpose** Counts all of the pixels on the screen and assigned them different RGB values according to the desicred image.  
+
+**Inputs** pixel_clk, reset, trigger_time, trigger_volt, ch1, ch1_enb, ch2, and ch2_enb.  
+
+**Outputs** h_synch, v_synch, blank, R, G, and B. 
+
+**Behavior** The counting takes place in double counter, which utilized process.  H_synch and V_synch are done using combinatonal logic.  The row and column numbers generated in the counter are used to determine the color of the pixel at that point, taken care in scopeFace.  The H_synch and V_synch models are useful for ensuring the visual signal is output properly.
 
 
 ##Double Counter
