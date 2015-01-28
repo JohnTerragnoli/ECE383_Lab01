@@ -173,7 +173,18 @@ Doing this allows the image to be presented correctly on the screen.
 
 ##Testbench Proofs
 
-There is something wrong with the testbench for the synch files.  
+Here are the desired snapshots:
+
+Show the h_synch going high, low, high, and related h count.
+![alt tag](https://raw.githubusercontent.com/JohnTerragnoli/ECE383_Lab01/master/pictures/h_synch_tb.PNG "h_synch tb")
+
+Show the h count rolling over causing the v count to increment
+![alt tag](https://raw.githubusercontent.com/JohnTerragnoli/ECE383_Lab01/master/pictures/rollOver.PNG "roll over")
+
+
+Show the v_synch going high, low, high, and related v count.
+![alt tag](https://raw.githubusercontent.com/JohnTerragnoli/ECE383_Lab01/master/pictures/v_synch_tb.PNG "v_synch tb")
+
 
 #Files
 
