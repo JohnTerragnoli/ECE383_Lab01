@@ -10,17 +10,12 @@ The purpose of this lab was to program the ATLYS (FPGA) in VHDL code so that it 
 
 To start off this design, the following files were given: 
 
-[lab1.vhdl](http://ecse.bd.psu.edu/cenbd452/lab/lab1/code/lab1.vhdl)
-
-[lab1.ucf](http://ecse.bd.psu.edu/cenbd452/lab/lab1/code/lab1.ucf)
-
-[video.vhdl](http://ecse.bd.psu.edu/cenbd452/lab/lab1/code/video.vhdl)
-
-[vga_tb.vhdl](http://ecse.bd.psu.edu/cenbd452/lab/lab1/code/vga_tb.vhdl)
-
-[dvid.vhdl](http://ecse.bd.psu.edu/cenbd452/lab/lab1/code/dvid.vhdl)
-
-[tdms.vhdl](http://ecse.bd.psu.edu/cenbd452/lab/lab1/code/tdms.vhdl)
+1. [lab1.vhdl](http://ecse.bd.psu.edu/cenbd452/lab/lab1/code/lab1.vhdl)
+2. [lab1.ucf](http://ecse.bd.psu.edu/cenbd452/lab/lab1/code/lab1.ucf)
+3. [video.vhdl](http://ecse.bd.psu.edu/cenbd452/lab/lab1/code/video.vhdl)
+4. [vga_tb.vhdl](http://ecse.bd.psu.edu/cenbd452/lab/lab1/code/vga_tb.vhdl)
+5. [dvid.vhdl](http://ecse.bd.psu.edu/cenbd452/lab/lab1/code/dvid.vhdl)
+6. [tdms.vhdl](http://ecse.bd.psu.edu/cenbd452/lab/lab1/code/tdms.vhdl)
 
 
 
