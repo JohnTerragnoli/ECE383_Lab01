@@ -20,5 +20,26 @@ The Double Counter box is expanded below, as it was too complex to fit in a smal
 
 The description of each part in the picture can be seen below: 
 
+##Lab1.vhd
+
+##Button Decoder
+
+##Video
+
+##DCM
+
+##VGA
+
+##Double Counter
+
+##H_Synch
+
+##V_Synch
+
+##ScopeFace
+
+##DVID
+
+*Note: some of the elements on the schematic given in the directions were excluded from the final drawing.  This it because those parts were implemented in a different module where their function was taken care of.  This includes the Muxes at the ouput of scopeface and the OBUFDS on the output of DVID.   
 
 #Test/Debug
