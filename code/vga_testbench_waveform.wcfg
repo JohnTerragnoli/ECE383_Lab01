@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/C16John.Terragnoli/Documents/Junior year/Academics/Second Semester/ECE 383/ISE Projects/Lab01b/lab1_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="lab1_tb" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="17" />
+   <wvobject fp_name="/lab1_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab1_tb/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab1_tb/trigger_volt" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">trigger_volt[11:0]</obj_property>
+      <obj_property name="ObjectShortName">trigger_volt[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab1_tb/trigger_time" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">trigger_time[11:0]</obj_property>
+      <obj_property name="ObjectShortName">trigger_time[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab1_tb/row" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">row[11:0]</obj_property>
+      <obj_property name="ObjectShortName">row[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab1_tb/column" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">column[11:0]</obj_property>
+      <obj_property name="ObjectShortName">column[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab1_tb/ch1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ch1</obj_property>
+      <obj_property name="ObjectShortName">ch1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab1_tb/ch1_enb" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ch1_enb</obj_property>
+      <obj_property name="ObjectShortName">ch1_enb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab1_tb/ch2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ch2</obj_property>
+      <obj_property name="ObjectShortName">ch2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab1_tb/ch2_enb" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ch2_enb</obj_property>
+      <obj_property name="ObjectShortName">ch2_enb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab1_tb/h_sync" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">h_sync</obj_property>
+      <obj_property name="ObjectShortName">h_sync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab1_tb/v_sync" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">v_sync</obj_property>
+      <obj_property name="ObjectShortName">v_sync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab1_tb/blank" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">blank</obj_property>
+      <obj_property name="ObjectShortName">blank</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab1_tb/r" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">r[7:0]</obj_property>
+      <obj_property name="ObjectShortName">r[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab1_tb/g" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">g[7:0]</obj_property>
+      <obj_property name="ObjectShortName">g[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab1_tb/b" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">b[7:0]</obj_property>
+      <obj_property name="ObjectShortName">b[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab1_tb/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+</wave_config>
