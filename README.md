@@ -92,7 +92,7 @@ Responsible for all of the work going on in the lab1 module, except for the deci
 
 **Outputs** h_synch, v_synch, blank, R, G, and B. 
 
-**Behavior** The counting takes place in double counter, which utilized process.  H_synch and V_synch are done using combinatonal logic.  The row and column numbers generated in the counter are used to determine the color of the pixel at that point, taken care in scopeFace.  The H_synch and V_synch models are useful for ensuring the visual signal is output properly.
+**Behavior** The counting takes place in double counter, which utilized process.  H_synch and V_synch are done using combinatonal logic and then output.  The row and column numbers generated in the counter are used to determine the color of the pixel at that point, taken care in scopeFace.  
 
 
 ##Double Counter
@@ -132,17 +132,23 @@ Doing this allows the image to be presented correctly on the screen.
 
 
 ##ScopeFace
-**Overall Purpose** 
-**Inputs**
-**Outputs**
-**Behavior**
+**Overall Purpose** Responsible for assigning the RGB values to each pixel that the computer works on.  
+
+**Inputs** columnNumber, trigger_volt, trigger_time, rowNumber, ch1, ch1_enb, ch2, and ch2_enb
+
+**Outputs** R, G, and B, for the two hex-digit values for red, green, and blue for every specific pixel.  
+
+**Behavior**  Within this module is a lot of simplification.  It has signals which describe the grid patter, the trigger patter, and the channel patterns to be drawn on the screen.  This was done to keep track of all then when statements used in it, which quickly became overwhelming.  
 
 
 ##DVID
-**Overall Purpose** 
-**Inputs**
-**Outputs**
-**Behavior**
+**Overall Purpose** To output the desired image in HDMI format and ensuring that all of the rows and columns are synched together for a cohesive picture.  Converts VGA signals into DVID bitstreams.
+
+**Inputs** Red, Green, Blue
+
+**Outputs** tmds, tmdsb
+
+**Behavior** This module was given to us and nothing was changed.  However, it is given the RGB values for each pixel, as well as the blank, h_synch, and v_synch signals, which ensures that the picture can be output in DVID bitstreams 
 
 
 
