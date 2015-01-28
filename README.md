@@ -169,10 +169,11 @@ Doing this allows the image to be presented correctly on the screen.
 8. After this, I created more intermediary signals for channel 1, channel 2, and the triggers, which I defined using the directions for how the stationary lines should look.  At this point they all showed up on the screen but nothing moved.  
 9. After listening to Dr. York's lecture on how to use two processes and an old and new button, I decided to do exactly what he did to use the buttons to move the trigger markers around.  The processes were used so that movement would only occur when a complete click occured.  The last button click was then made to be the old button, and to check whether to move again, the new button was compared with the old button as ((not old_button) and btn).  This did not get rid of debouncing, but it made the buttons respond much better.
 10. Once I got the buttons working, I was playing with the triggers, and then I moved them off the oscilloscope screen.  To fix this, I added some combinational logic in Lab1.vhdl to ensure that the trigger position would move off the oscilloscope screen.  Once this was done, a functionality was completed.  
-11. 
+
 
 ##Testbench Proofs
 
+There is something wrong with the testbench for the synch files.  
 
 #Files
 
