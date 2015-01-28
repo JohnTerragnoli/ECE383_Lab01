@@ -11,7 +11,11 @@ The purpose of this lab was to program the ATLYS (FPGA) in VHDL code so that it 
 To start off this design, the following files were given: 
 
 
-Then, this picture was made to give overview and insight to how the overall program would run.  
+Also, this schematic was given in the instructions: 
+
+![alt tag](https://raw.githubusercontent.com/JohnTerragnoli/ECE383_Lab01/master/pictures/Original%20Schematic.PNG "original schematic")
+
+Then, this picture was made to give overview and insight to how the overall program would run.  This was done with the proper names according to the signals used in the actual coding.  
 
 ![alt tag](https://raw.githubusercontent.com/JohnTerragnoli/ECE383_Lab01/master/pictures/Total%20Schematic.JPG "total schematic")
 
