@@ -211,6 +211,9 @@ Rise Time: 15.744ms
 
 Also, in addition to the VGA testbench, I also used a testbench for the double counter to ensure that it was working properly.  Below are the screenshots proving the rollover of the first and second place in the double counter.  
 
+![alt tag](https://raw.githubusercontent.com/JohnTerragnoli/ECE383_Lab01/master/pictures/first_place_rollover.PNG "first place rollover")
+
+![alt tag](https://raw.githubusercontent.com/JohnTerragnoli/ECE383_Lab01/master/pictures/second_place_rollover.PNG "second place rollover")
 
 
 #Files
