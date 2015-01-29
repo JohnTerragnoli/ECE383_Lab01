@@ -215,6 +215,8 @@ Also, in addition to the VGA testbench, I also used a testbench for the double c
 
 ![alt tag](https://raw.githubusercontent.com/JohnTerragnoli/ECE383_Lab01/master/pictures/second_place_rollover.PNG "second place rollover")
 
+The files for this waveform and testbench can be seen below in the files section.  
+
 
 #Files
 
@@ -235,6 +237,7 @@ All of the files used in the lab can be seen below:
 13. [video.vhdl](https://raw.githubusercontent.com/JohnTerragnoli/ECE383_Lab01/master/code/video.vhdl)
 14. [VGA waveform](https://raw.githubusercontent.com/JohnTerragnoli/ECE383_Lab01/master/code/vga_testbench_waveform.wcfg)
 15. [bit file](https://github.com/JohnTerragnoli/ECE383_Lab01/blob/master/code/lab1.bit)
+16. [double counter waveform](https://raw.githubusercontent.com/JohnTerragnoli/ECE383_Lab01/master/code/doubleCounter.wcfg)
 
 
 
