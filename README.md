@@ -122,7 +122,13 @@ Doing this allows the image to be presented correctly on the screen.
 
 **Behavior**  Within this module is a lot of simplification.  It has signals which describe the grid patter, the trigger patter, and the channel patterns to be drawn on the screen.  This was done to keep track of all then when statements used in it, which quickly became overwhelming.  
 
-**The modules below were used but not created or edited.  
+
+
+
+
+
+**The modules below were used but not created or edited.  **
+
 
 
 
@@ -154,7 +160,7 @@ Doing this allows the image to be presented correctly on the screen.
 
 **Outputs** tmds, tmdsb
 
-**Behavior** This module was given to us and nothing was changed.  However, it is given the RGB values for each pixel, as well as the blank, h_synch, and v_synch signals, which ensures that the picture can be output in DVID bitstreams 
+**Behavior** This module was given to us and nothing was changed.  However, it is given the RGB values for each pixel, as well as the blank, h_synch, and v_synch signals, which ensures that the picture can be output in DVID bitstreams.  Also, notice that in the picture DVID and the OBUFDS were mixed together, since neither of them were touched in the creation process.  
 
 
 
@@ -184,15 +190,32 @@ Here are the desired snapshots:
 Show the h_synch going high, low, high, and related h count.
 ![alt tag](https://raw.githubusercontent.com/JohnTerragnoli/ECE383_Lab01/master/pictures/h_synch_tb.PNG "h_synch tb")
 
+
+It is hard to tell from the diagram, but the pertinent measurements are below:
+Fall Time:26.3us 
+Rise Time: 30.1us
+
 Show the h count rolling over causing the v count to increment
 ![alt tag](https://raw.githubusercontent.com/JohnTerragnoli/ECE383_Lab01/master/pictures/rollOver.PNG "roll over")
+
+It is hard to tell from the diagram, but the pertinent measurements are below:
+rollover time: 32.02us
 
 
 Show the v_synch going high, low, high, and related v count.
 ![alt tag](https://raw.githubusercontent.com/JohnTerragnoli/ECE383_Lab01/master/pictures/v_synch_tb.PNG "v_synch tb")
 
+It is hard to tell from the diagram, but the pertinent measurements are below:
+Fall Time:15.86ms 
+Rise Time: 15.744ms
+
+Also, in addition to the VGA testbench, I also used a testbench for the double counter to ensure that it was working properly.  Below are the screenshots proving the rollover of the first and second place in the double counter.  
+
+
 
 #Files
+
+All of the files used in the lab can be seen below: 
 
 1. [cascadeCounter.vhd](https://raw.githubusercontent.com/JohnTerragnoli/ECE383_Lab01/master/code/cascadeCounter.vhd)
 2. [cascadeCounter_tb.vhd](https://raw.githubusercontent.com/JohnTerragnoli/ECE383_Lab01/master/code/cascadeCounter_tb.vhd)
