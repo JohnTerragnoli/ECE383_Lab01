@@ -245,10 +245,12 @@ All of the files used in the lab can be seen below:
 **What I learned from this lab:**
 1. Definitely learned how to use a button correctly.  I had no idea on how to prevent the triggers from shooting across the screen until Dr. York showed me.  I will use this in future projects.  
 2. The propatation delay in parts is small enough so that simplification can be done with middle wires and combinational logic can be used without the fear of the propagation causing the signal to delay on clock cycle.  
+3. I learned how a screen works in general.  I thought all of the pixels came on the screen all at once, but now I realize we have to count through every single one and assigne it a color.  
 
 
 **what I would change about this lab:**
 1. Ensure that all of the given files have the correct syntax and no errors in them.  I spent a lot of time just looking for the mistakes in the original files to get the hierarchy to look correct.  
+2. some way to fix the debouncing problem?
 
 #Documentation: 
 C2C Sabin Park said that it was really hard to use decimal digits within the modules, so he Recommended using hexidecimal.  To make this alright, I then had to increase the length of the signal
