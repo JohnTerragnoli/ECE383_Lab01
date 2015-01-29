@@ -65,24 +65,6 @@ The description of each part in the picture can be seen below:
 **Behavior**
 Responsible for all of the work going on in the lab1 module, except for the deciphering of the buttons and the changing of the location of the triggers.  
 
-##DCM(1)
-**Overall Purpose** Creates the 12.5MHz pixel clock from the given 100MHz clock.  Like a divider.  
-
-**Inputs** clk, reset
-
-**Outputs** pixel_clk
-
-**Behavior** Just an entity of it is created in the video.vhd module. I did not create this file it was just used. 
-
-
-##DCM(2)
-**Overall Purpose** Creates the 12.5MHz pixel clock from the given 100MHz clock.  Like a divider.  
-
-**Inputs** clk, reset
-
-**Outputs** serialize_clk, serialize_clk_n
-
-**Behavior** Just an entity of it is created in the video.vhd module. I did not create this file it was just used. 
 
 
 ##VGA
@@ -139,6 +121,30 @@ Doing this allows the image to be presented correctly on the screen.
 **Outputs** R, G, and B, for the two hex-digit values for red, green, and blue for every specific pixel.  
 
 **Behavior**  Within this module is a lot of simplification.  It has signals which describe the grid patter, the trigger patter, and the channel patterns to be drawn on the screen.  This was done to keep track of all then when statements used in it, which quickly became overwhelming.  
+
+**The modules below were used but not created or edited.  
+
+
+
+
+##DCM(1)
+**Overall Purpose** Creates the 12.5MHz pixel clock from the given 100MHz clock.  Like a divider.  
+
+**Inputs** clk, reset
+
+**Outputs** pixel_clk
+
+**Behavior** Just an entity of it is created in the video.vhd module. I did not create this file it was just used. 
+
+
+##DCM(2)
+**Overall Purpose** Creates the 12.5MHz pixel clock from the given 100MHz clock.  Like a divider.  
+
+**Inputs** clk, reset
+
+**Outputs** serialize_clk, serialize_clk_n
+
+**Behavior** Just an entity of it is created in the video.vhd module. I did not create this file it was just used. 
 
 
 ##DVID
